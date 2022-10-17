@@ -1,0 +1,10 @@
+<form [formGroup]="LoginForm">
+    <input type="text" name="username" [formControlName]="'username'">
+    <input type="password" name="password" [formControlName]="'password'">
+    <button type="submit" (click)="Login()">Accedi</button>
+</form>
+
+<button  (click)="agg()">Check</button>
+
+
+{{(msg==undefined)?"null":msg}}
